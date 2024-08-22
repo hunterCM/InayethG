@@ -1,4 +1,5 @@
 Configure Power BI Embedded and call from JavaScript
+
 This GitHub repository is designed to help you setup and configure Power BI Embedded in your Azure subscription. The process of setting up Power BI Embedded can be confusing since it requires configuring several resource correctly (e.g. Azure Service Principal, Azure Security, Power BI, creating Embedded capacity, etc.) and you must tie them together correctly. The below steps will walk you through the entire process. I recorded a video to show you how to perform the process.
 
 Power BI Embedded is a great tool, but most report developers have issues when setting up and configuring Power BI Embedded since it requires help from IT.
@@ -24,6 +25,7 @@ Deploy a sample report
 Walk through the C# code in the PowerBI-Developer-Samples sample project provided by Microsoft and explain each element used in embedded (e.g. report token, report url and report id).
 Deploy an Azure Function which will run the C# code from the PowerBI-Developer-Samples and return back a report token, url and id. The Azure Function means we can then call this from any system, web page or JavaScript code and have our reports easily embedded into any application. You do not want to author this code everytime you want to quickly embed a report. Embedding should take 2 minutes.
 Create a simple HTML page with minimal JavaScript to show you how to embed a report. This allows you to the minimal code required to embed a report on a web page or single page application.
+
 Notes
 I will not use the Power BI online wizard (https://app.powerbi.com/embedsetup/appownsdata) to create the Power BI setup.
 Sometimes the wizard does not work due to how companies have configured their Azure Subscription. If you use the wizard, you must use it as a Global Azure Admin and that Admin must have a Power BI Pro account and they must have logged into https://app.powerbi.com/ before using the wizard. You also must go generate a key by hand.
